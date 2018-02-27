@@ -5,7 +5,16 @@ This is a try to develop a Win lower filter driver to patch USB support adding P
 Power per port means real switch off +5V in the USB ports.
 
 This is my first driver so it will take me some time.
-Here below it is what I learned up to now.
+Here below it is what I am researching.
+
+## HOWTO
+KEYS:
+- [ ] = TODO (in progress, feel free to help creating an issue!
+- [x] = Done
+
+KNOWLEDGE:
+- [ ] [howto-put-control-transfer-in-IOCTL](https://github.com/Manel3/usbpower/blob/master/HOWTO/howto-put-control-transfer-in-IOCTL.md)
+- [ ] [howto-find-handle-for-an-IOCTL](https://github.com/Manel3/usbpower/blob/master/HOWTO/howto-find-handle-for-an-IOCTL.md)
 
 
 ## FACTS
