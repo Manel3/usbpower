@@ -107,6 +107,11 @@ usbscan.h header:
 
 
 ## EXAMPLES:
+**UsbDk** direct and exclusive access to USB devices by detaching those from Windows:
+- https://github.com/daynix/UsbDk
+
+**libusbK** is a complete driver/library solution for vendor class usb device interfaces: 
+- https://sourceforge.net/projects/libusbk/
 
 Simple URB (USB Request Block) Monitor:
-  https://www.codeproject.com/Articles/335364/Simple-URB-USB-Request-Block-Monitor
+- https://www.codeproject.com/Articles/335364/Simple-URB-USB-Request-Block-Monitor
