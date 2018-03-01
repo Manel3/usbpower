@@ -1,8 +1,9 @@
 ## Howto send USB in driver
+### Key API definitions and calls:
+- IOCTL number: [IOCTL_INTERNAL_USB_SUBMIT_URB](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb)
+- IOCTL call: [IoBuildDeviceIoControlRequest](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 
-- [IOCTL_INTERNAL_USB_SUBMIT_URB](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb)
-- [IoBuildDeviceIoControlRequest](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
-
+### How it is done on:
 In UsbDk-1.00-19/UsbDk/**DeviceAccess.cpp**:
 ``` c
 NTSTATUS UsbDkSendUrbSynchronously(PDEVICE_OBJECT Target, URB &Urb)
