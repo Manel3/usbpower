@@ -8,6 +8,7 @@ CFLAGS ?= -s -Os
 CFLAGS += -Wall -Wextra -std=c99 -pedantic
 CFLAGS += -DPROGRAM_VERSION=\"0.1\" -I.
 
+all: test-ioctl-to-hub
 
 test-ioctl-to-hub: test-ioctl-to-hub.c
 	$(CC) $(CFLAGS) $@.c -o $@.exe
