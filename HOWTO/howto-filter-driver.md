@@ -36,3 +36,4 @@ About drivers:
 - [Differences Between WDM and WDF](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/differences-between-wdm-and-kmdf)
 - [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model)
 - [Write your first driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/writing-your-first-driver)
+- [Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/)
