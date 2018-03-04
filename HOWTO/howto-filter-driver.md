@@ -16,7 +16,7 @@ Filter drivers:
 |------|------------------------|-----------------------------------------------------------------|
 | UMDF | WDF User Mode Driver   | there is a framework, limited access to kernel                  |
 | KMDF | WDF Kernel Mode Driver | there is a framework, kernel mode with access to INTERNAL IOCTL |
-| WDS  |  ? | close to the operating system |
+| WDM  | Windows Driver Model   | close to the operating system                                   |
 
 The framework does work for you, but you know how to interface with it
 
