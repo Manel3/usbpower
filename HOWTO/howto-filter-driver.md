@@ -37,3 +37,7 @@ About drivers:
 - [Choosing a driver model](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/choosing-a-driver-model)
 - [Write your first driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/writing-your-first-driver)
 - [Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/)
+
+WDM development:
+- [A simple demo for WDM Driver development](https://www.codeproject.com/Articles/8651/A-simple-demo-for-WDM-Driver-development)
+- [Writing WDM Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/writing-wdm-drivers)
