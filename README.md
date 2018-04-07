@@ -33,6 +33,13 @@ KNOWLEDGE:
 - Writing WDF Drivers I: Core Concepts Lab Material: https://github.com/OSRDrivers/WDF-I
 - Best Practices for Windows Driver Developers, in: http://insider.osr.com/2017/ntinsider_2017_01.pdf
 
+## INFO WDF from OSR
+- [Bye-Bye Co-Installers](https://www.osr.com/nt-insider/2016-issue1/bye-bye-co-installers/)
+- [KMDF and UMDF Hints](https://www.osr.com/nt-insider/2015-issue1/kmdf-umdf-hints/)
+- [WDF File Object Callbacks and Properties Demystified](https://www.osr.com/nt-insider/2014-issue1/wdf-file-object-callbacks-properties-demystified/)
+- [The Basics About WDF Queues](https://www.osr.com/nt-insider/2011-issue2/basics-wdf-queues/)
+- [Driver Signing and Windows 10](https://www.osr.com/nt-insider/2015-issue2/driver-signing-windows-10/)
+
 ## INFO WDM (Windows Driver Model?):
 
 I/O Control Operations:
