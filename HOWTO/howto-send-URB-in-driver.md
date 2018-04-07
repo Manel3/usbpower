@@ -3,6 +3,7 @@
 - IOCTL number: [IOCTL_INTERNAL_USB_SUBMIT_URB](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_urb)
     - Defined in [usbioctl.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/usbioctl/)
 - IOCTL call: [IoBuildDeviceIoControlRequest](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
+    - Please read first OSR blog entry: [Beware of IoBuildDeviceIoControlRequest](https://www.osr.com/blog/2018/02/14/beware-iobuilddeviceiocontrolrequest/)
 
 ### How it is done on:
 In UsbDk-1.00-19/UsbDk/**DeviceAccess.cpp**:
