@@ -18,24 +18,20 @@ KNOWLEDGE:
 
 
 ## FACTS
-In USB messages are send via MessagePipes to Endpoints
+- In USB messages are send via MessagePipes to Endpoints
+- Default Control Pipe to Endpoint Zero is owned and managed by USBD (USB Driver)
+- We need USB Control Transfer to check and use power per port
+- User space application calls IOCTLs to comunicate with Device Driver (or Device Driver Filter).
+- There are no IOCTLs to send USB Control Transfer from user space (application)
+- The most similar are IRP_MJ_DEVICE_CONTROL:
+  + IOCTL_WRITE_REGISTERS, IOCTL_READ_REGISTERS, IOCTL_SEND_USB_REQUEST: all of them for imaging devices
+  + IOCTL_USB_USER_REQUEST - USBUSER_PASS_THRU: in disuse and it looks like only allowed to admin users
+- There is a IOCTL to send USB packets but it can be used only from kernel mode (driver) it is IOCTL_INTERNAL_USB_SUBMIT_URB
 
-Default Control Pipe to Endpoint Zero is owned and managed by USBD (USB Driver)
-
-We need USB Control Transfer to check and use power per port
-
-User space application calls IOCTLs to comunicate with Device Driver (or Device Driver Filter).
-
-There are no IOCTLs to send USB Control Transfer from user space (application)
-
-  The most similar are IRP_MJ_DEVICE_CONTROL:
-  
-    IOCTL_WRITE_REGISTERS, IOCTL_READ_REGISTERS, IOCTL_SEND_USB_REQUEST: all of them for imaging devices
-    
-    IOCTL_USB_USER_REQUEST - USBUSER_PASS_THRU: in disuse and it looks like only allowed to admin users
-    
-There is a IOCTL to send USB packets but it can be used only from kernel mode (driver) it is IOCTL_INTERNAL_USB_SUBMIT_URB
-
+## INFO drivers
+- Getting Started Writing Windows Drivers: https://www.osr.com/getting-started-writing-windows-drivers/
+- Writing WDF Drivers I: Core Concepts Lab Material: https://github.com/OSRDrivers/WDF-I
+- Best Practices for Windows Driver Developers, in: http://insider.osr.com/2017/ntinsider_2017_01.pdf
 
 ## INFO WDM (Windows Driver Model?):
 
