@@ -25,6 +25,18 @@ The framework does work for you, but you know how to interface with it
 - upper class filter
 - creates a raw PDO to open a communication channel to the filter driver
 
+### Example from OSR
+[CDFilter](https://github.com/OSRDrivers/WDF-I/tree/master/CDFilter)
+- upper class filter
+- minimal
+
+### Install of filter driver
+Right click on **CDFilter.inf** file and select **install**
+
+### Uninstall of filter driver
+From an **administrator cmd** run: **devcon classfilter cdrom upper !CDFilter**
+- run: **devcon help classfilter** to read proper syntax
+
 ### Links
 About filters:
 
