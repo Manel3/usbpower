@@ -18,6 +18,10 @@ API doc tells to use the CreateFile function to retrieve it, we will need a devi
 - device ID = USB\VID_05E3&PID_0608\5&147EFEE4&0&3
 - external device filename = \\\\?\\USB#VID_05E3&PID_0608#5&147EFEE4&0&3#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
 
+It is far more easy if the driver helps creating a symbolic link so that usermode can open device by name:
+- [WdfDeviceCreateSymbolicLink](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink), with e.g: **L"\\Global??\\DriverName"**
+
+
 ### To find device ID using devcon.exe
 
 install Windows Software Development Kit
