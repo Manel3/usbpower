@@ -20,6 +20,10 @@ Filter drivers:
 
 The framework does work for you, but you know how to interface with it
 
+It is wise to build for **kmdf version 1.11**, see [kmdf-version-history](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/kmdf-version-history) when functionality of later kmdf versions is not needed 
+- A driver for kmdf v1.11 will run on Windows Vista and later.
+- Read: [Bye-Bye Co-Installers](https://www.osr.com/nt-insider/2016-issue1/bye-bye-co-installers/)
+
 ### Example from MS
 [kbfiltr](https://github.com/Microsoft/Windows-driver-samples/tree/master/input/kbfiltr)
 - upper class filter
