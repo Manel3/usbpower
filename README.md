@@ -1,11 +1,19 @@
 # usbpower
 
-This is a try to develop a Win lower filter driver to patch USB support adding Port-Power control feature to powered USB HUBs which support it (very few). The target is to allow uhubctl https://github.com/mvp/uhubctl to work on Windows.
+This is a try to develop a Win upper filter driver to patch USB support adding Port-Power control feature to powered USB HUBs which support it (very few). The target is to allow uhubctl https://github.com/mvp/uhubctl to work on Windows.
+
+This is my first driver so it will take me some time.
+Here below and in HOWTO directory it is what I am researching.
+
+
+## Background
 
 Power per port means real switch off +5V in the USB ports.
 
-This is my first driver so it will take me some time.
-Here below it is what I am researching.
+It is included in USB 2.0 specification as a must for powered hubs (hubs with power supply), not included in laters specifications, and included again in USB 3.2 specification for all USB-C connectors.
+
+Unfortunately there is no support to use Power per port in Windows due to a design decission.
+
 
 ## HOWTO
 KEYS:
