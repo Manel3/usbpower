@@ -21,6 +21,8 @@ API doc tells to use the CreateFile function to retrieve it, we will need a devi
 It is far more easy if the driver helps creating a symbolic link so that usermode can open device by name:
 - [WdfDeviceCreateSymbolicLink](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink), with e.g: **L"\\Global??\\DriverName"**
 
+TODO another WDF way?: [Using Device Interfaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces)
+
 
 ### To find device ID using devcon.exe
 
